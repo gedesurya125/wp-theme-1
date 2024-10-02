@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <main>
-    <div >
-      <h1 >
-        Hello world!
-      </h1>
-    </div>
-  </main>
+<?php get_header() ?>
 
-</body>
-</html>
+<?php get_sidebar() ?>
+<main>
+  <div>
+    <h1><?php the_title(  )?></h1>
+    <?php
+    if(have_posts(  )){
+      while(have_posts(  )){
+        the_post(  );
+        the_content(  );
+      }
+    }
+  ?>
+  </div>
+</main>
+
+<?php get_footer() ?>

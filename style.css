@@ -6,3 +6,10 @@ Description: Gede Surya first wordpress theme
 Author: gedesurya125
 Author URI: http://www.google.com
  */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: beige;
+}
