@@ -7,5 +7,8 @@
     <section>Services</section>
     <section>Blog</section>
   </main>
+  <footer>
+    Footer
+  </footer>
 
 <?php get_footer(  ) ?>
