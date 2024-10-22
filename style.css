@@ -1,15 +1,19 @@
-/* 
-Theme Name: GedeSurya
-Text Domain: GedeSurya
-Version: 1.0,
-Description: Gede Surya first wordpress theme
-Author: gedesurya125
-Author URI: http://www.google.com
- */
+/*
+Theme Name: gedesurya125 Theme 1
+Author: I Gede Surya Adi Pranata
+Description: This is the first theme of me, I got how to do it from the Udemy. This project will be my best starting theme ever
+Version: 0.1
+Requires PHP: 7.0
+Requires at least: 6.6
+Tested up to: 6.6
+License: MIT
+License URI: https://opensource.org/license/mit
+Text Domain: wpdevs
+Configuration reference taken from https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+
+/* Css reset */
 * {
   margin: 0;
   padding: 0;
-}
-html {
-  background-color: beige;
 }
