@@ -10,5 +10,4 @@
   <footer>
     Footer
   </footer>
-
 <?php get_footer(  ) ?>
