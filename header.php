@@ -7,3 +7,9 @@
 </head>
 
 <body <?php body_class('poppins-light') ?> >
+  <nav>
+    <?php wp_nav_menu( array(
+      "location"=> 'wp_devs_main_menu'
+      ) 
+    )?>
+  </nav>
