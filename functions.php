@@ -38,6 +38,10 @@ function gs_load_script(){
   );
 
 
+  // Load the javascript files
+  wp_enqueue_script( "gs_js_index", get_template_directory_uri(  ).'/assets/js/index.js', array(), '1.0', true ); //? true mean the script is loaded in the footer
+
+
   
 };
 
