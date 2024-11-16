@@ -1,0 +1,54 @@
+:root {
+  --target-phone-portrait-screen-size: 375px;
+  --target-tablet-portrait-screen-size: 834px;
+  --target-tablet-landscape-screen-size: 1194px;
+  --target-desktop-screen-size: 1440px;
+  --normalize-rem-value: 10px;
+
+  --responsive-grow-ratio: 8; /* 1-10, 10 is equal to linear grow*/
+  --responsive-grow-phone: calc(var(--responsive-grow-ratio) / 375);
+  --responsive-grow-tablet-portrait: calc(var(--responsive-grow-ratio) / 834);
+  --responsive-grow-tablet-landscape: calc(var(--responsive-grow-ratio) / 1194);
+  --responsive-grow-desktop: calc(var(--responsive-grow-ratio) / 1440);
+}
+
+/* Phone portrait */
+html {
+  font-size: calc(
+    var(--responsive-grow-phone) *
+      (100vw - var(--target-phone-portrait-screen-size)) +
+      var(--normalize-rem-value)
+  ) !important;
+}
+
+/* tablet portrait */
+@media screen and (min-width: 750px) {
+  html {
+    font-size: calc(
+      var(--responsive-grow-tablet-portrait) *
+        (100vw - var(--target-tablet-portrait-screen-size)) +
+        var(--normalize-rem-value)
+    ) !important;
+  }
+}
+
+/* tablet landscape */
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: calc(
+      var(--responsive-grow-tablet-landscape) *
+        (100vw - var(--target-tablet-landscape-screen-size)) +
+        var(--normalize-rem-value)
+    ) !important;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: calc(
+      var(--responsive-grow-desktop) *
+        (100vw - var(--target-desktop-screen-size)) + var(--normalize-rem-value)
+    ) !important;
+  }
+}

@@ -2,15 +2,25 @@
 
 function gs_load_script(){
   //load the css normalizer file
-  // load the font style
+
+
+
+  // load the responsiveness behavior
   wp_enqueue_style( 
-    'gs_google_font_poppies', 
+    'gs_css_responsiveness', 
+    get_template_directory_uri().'/assets/css/responsiveness.css', 
+    array()
+  );
+
+  // load the css normalizer
+  wp_enqueue_style( 
+    'gs_css_normalizer', 
     get_template_directory_uri().'/assets/css/normalize.css', 
     array()
   );
   // load the main style
   wp_enqueue_style(
-    'gs-style', 
+    'gs-main-style', 
     get_stylesheet_uri(),  
     array(), 
     filemtime(get_template_directory(  ).'/style.css'), //? enable only in the development mode. otherwise use the css version number instead

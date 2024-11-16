@@ -61,3 +61,32 @@ Configuration reference taken from https://developer.wordpress.org/themes/basics
   font-weight: 600;
   font-style: italic;
 }
+
+/* Theme Styles */
+
+/* Phone portrait */
+
+h1 {
+  font-size: 3rem;
+}
+
+/* tablet portrait */
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* tablet landscape */
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1300px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

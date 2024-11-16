@@ -3,7 +3,9 @@
     <section>Header</section>
   </header>
   <main>
-    <section>Hero</section>
+    <section>
+      <h1>Hero</h1>
+    </section>
     <section>Services</section>
     <section>Blog</section>
   </main>
