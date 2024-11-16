@@ -1,6 +1,13 @@
 <?php
 
 function gs_load_script(){
+  //load the css normalizer file
+  // load the font style
+  wp_enqueue_style( 
+    'gs_google_font_poppies', 
+    get_template_directory_uri().'/assets/css/normalize.css', 
+    array()
+  );
   // load the main style
   wp_enqueue_style(
     'gs-style', 

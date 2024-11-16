@@ -12,11 +12,7 @@ Text Domain: wpdevs
 Configuration reference taken from https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 
-/* Css reset */
-* {
-  margin: 0px;
-  padding: 0px;
-}
+/* 2. Theme */
 
 .poppins-light {
   font-family: "Poppins", sans-serif;
