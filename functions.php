@@ -1,8 +1,18 @@
 <?php
 
 function gs_load_script(){
-  //load the css normalizer file
-
+  // load the font style
+  wp_enqueue_style( 
+    'gs_google_font_poppies', 
+    get_template_directory_uri().'/assets/fonts/Poppins/font.css', 
+    array()
+  );
+  // load the font classes
+  wp_enqueue_style( 
+    'gs_font_classes', 
+    get_template_directory_uri().'/assets/css/font_classes.css', 
+    array()
+  );
 
 
   // load the responsiveness behavior
@@ -27,12 +37,7 @@ function gs_load_script(){
     'all'
   );
 
-  // load the font style
-  wp_enqueue_style( 
-    'gs_google_font_poppies', 
-    get_template_directory_uri().'/assets/fonts/Poppins/font.css', 
-    array()
-  );
+
   
 };
 
