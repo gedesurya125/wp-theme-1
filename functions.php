@@ -42,10 +42,19 @@ function gs_load_script(){
   wp_enqueue_script( "gs_js_index", get_template_directory_uri(  ).'/assets/js/index.js', array(), '1.0', true ); //? true mean the script is loaded in the footer
 
 
+
   
 };
 
 add_action( 'wp_enqueue_scripts', 'gs_load_script' );
+
+//? Register the menu plugin in wordpress Appearance > Menus
+register_nav_menus( array(
+  'wp_devs_main_menu' => 'Main Menu',
+  'wp_devs_footer_menu' => 'Footer Menu'
+  )
+);
+
 
 //? This remove the default important margin source: https://stackoverflow.com/questions/25491619/how-to-delete-margin-top-32px-important-from-twenty-twelve
 add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
