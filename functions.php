@@ -57,4 +57,4 @@ register_nav_menus( array(
 
 
 //? This remove the default important margin source: https://stackoverflow.com/questions/25491619/how-to-delete-margin-top-32px-important-from-twenty-twelve
-add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
+// add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
