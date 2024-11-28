@@ -1,12 +1,16 @@
 <?php get_header( )?>
+<?php 
+  wp_enqueue_style( 
+    'gs_front_page_style', 
+    get_template_directory_uri().'/assets/css/front-page.css', 
+    array()
+  ); 
+?>
   <main>
-    <section>Hero</section>
-    <section>Services</section>
-    <section>Blog</section>
+    <h1>This is the front page</h1>
     <section>
       <h2>Post list</h2>
       <ul>
-
         <?php
           if ( have_posts() ) :
             while ( have_posts() ) : the_post();
